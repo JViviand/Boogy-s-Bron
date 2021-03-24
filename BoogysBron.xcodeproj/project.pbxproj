@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		932BDA7C2608D703009D717D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDA7B2608D703009D717D /* AppDelegate.swift */; };
+		932BDA7E2608D703009D717D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDA7D2608D703009D717D /* SceneDelegate.swift */; };
+		932BDA832608D703009D717D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932BDA812608D703009D717D /* Main.storyboard */; };
+		932BDA852608D705009D717D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 932BDA842608D705009D717D /* Assets.xcassets */; };
+		932BDA882608D705009D717D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932BDA862608D705009D717D /* LaunchScreen.storyboard */; };
+		932BDA932608D738009D717D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 932BDA922608D738009D717D /* Lottie */; };
+		932BDA9E2608DCC5009D717D /* Animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 932BDA9D2608DCC5009D717D /* Animation.json */; };
+		932BDAC22608E2EE009D717D /* AcceuilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDAC12608E2EE009D717D /* AcceuilViewController.swift */; };
+		932BDAC52608E315009D717D /* BonPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDAC42608E315009D717D /* BonPlanViewController.swift */; };
+		932BDACA2608E332009D717D /* ProduitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDAC92608E332009D717D /* ProduitsViewController.swift */; };
+		932BDACD2608E353009D717D /* PizzaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDACC2608E353009D717D /* PizzaViewController.swift */; };
+		932BDAD12608E378009D717D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932BDAD02608E378009D717D /* ContactViewController.swift */; };
+		932BDB00260901BC009D717D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932BDAFF260901BC009D717D /* CoreLocation.framework */; };
+		932BDB06260A5F89009D717D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932BDB05260A5F89009D717D /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		932BDA782608D703009D717D /* BoogysBron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoogysBron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		932BDA7B2608D703009D717D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		932BDA7D2608D703009D717D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		932BDA822608D703009D717D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		932BDA842608D705009D717D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		932BDA872608D705009D717D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		932BDA892608D705009D717D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932BDA9D2608DCC5009D717D /* Animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Animation.json; path = Animation/Animation.json; sourceTree = SOURCE_ROOT; };
+		932BDAC12608E2EE009D717D /* AcceuilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceuilViewController.swift; sourceTree = "<group>"; };
+		932BDAC42608E315009D717D /* BonPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonPlanViewController.swift; sourceTree = "<group>"; };
+		932BDAC92608E332009D717D /* ProduitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduitsViewController.swift; sourceTree = "<group>"; };
+		932BDACC2608E353009D717D /* PizzaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewController.swift; sourceTree = "<group>"; };
+		932BDAD02608E378009D717D /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		932BDAFF260901BC009D717D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		932BDB05260A5F89009D717D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		932BDA752608D703009D717D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932BDB06260A5F89009D717D /* MessageUI.framework in Frameworks */,
+				932BDB00260901BC009D717D /* CoreLocation.framework in Frameworks */,
+				932BDA932608D738009D717D /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		932BDA6F2608D703009D717D = {
+			isa = PBXGroup;
+			children = (
+				932BDA7A2608D703009D717D /* BoogysBron */,
+				932BDA792608D703009D717D /* Products */,
+				932BDAFE260901BC009D717D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		932BDA792608D703009D717D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				932BDA782608D703009D717D /* BoogysBron.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		932BDA7A2608D703009D717D /* BoogysBron */ = {
+			isa = PBXGroup;
+			children = (
+				932BDA982608D7CB009D717D /* Model */,
+				932BDA972608D7B9009D717D /* View */,
+				932BDA952608D7AD009D717D /* Controller */,
+				932BDA7B2608D703009D717D /* AppDelegate.swift */,
+				932BDA7D2608D703009D717D /* SceneDelegate.swift */,
+				932BDA9D2608DCC5009D717D /* Animation.json */,
+				932BDA842608D705009D717D /* Assets.xcassets */,
+				932BDA892608D705009D717D /* Info.plist */,
+			);
+			path = BoogysBron;
+			sourceTree = "<group>";
+		};
+		932BDA952608D7AD009D717D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				932BDAC12608E2EE009D717D /* AcceuilViewController.swift */,
+				932BDAC42608E315009D717D /* BonPlanViewController.swift */,
+				932BDAC92608E332009D717D /* ProduitsViewController.swift */,
+				932BDACC2608E353009D717D /* PizzaViewController.swift */,
+				932BDAD02608E378009D717D /* ContactViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		932BDA972608D7B9009D717D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				932BDA862608D705009D717D /* LaunchScreen.storyboard */,
+				932BDA812608D703009D717D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		932BDA982608D7CB009D717D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		932BDAFE260901BC009D717D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932BDB05260A5F89009D717D /* MessageUI.framework */,
+				932BDAFF260901BC009D717D /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		932BDA772608D703009D717D /* BoogysBron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 932BDA8C2608D705009D717D /* Build configuration list for PBXNativeTarget "BoogysBron" */;
+			buildPhases = (
+				932BDA742608D703009D717D /* Sources */,
+				932BDA752608D703009D717D /* Frameworks */,
+				932BDA762608D703009D717D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoogysBron;
+			packageProductDependencies = (
+				932BDA922608D738009D717D /* Lottie */,
+			);
+			productName = BoogysBron;
+			productReference = 932BDA782608D703009D717D /* BoogysBron.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		932BDA702608D703009D717D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					932BDA772608D703009D717D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 932BDA732608D703009D717D /* Build configuration list for PBXProject "BoogysBron" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 932BDA6F2608D703009D717D;
+			packageReferences = (
+				932BDA912608D738009D717D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 932BDA792608D703009D717D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				932BDA772608D703009D717D /* BoogysBron */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		932BDA762608D703009D717D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932BDA882608D705009D717D /* LaunchScreen.storyboard in Resources */,
+				932BDA852608D705009D717D /* Assets.xcassets in Resources */,
+				932BDA9E2608DCC5009D717D /* Animation.json in Resources */,
+				932BDA832608D703009D717D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		932BDA742608D703009D717D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				932BDACD2608E353009D717D /* PizzaViewController.swift in Sources */,
+				932BDA7C2608D703009D717D /* AppDelegate.swift in Sources */,
+				932BDA7E2608D703009D717D /* SceneDelegate.swift in Sources */,
+				932BDAC52608E315009D717D /* BonPlanViewController.swift in Sources */,
+				932BDAD12608E378009D717D /* ContactViewController.swift in Sources */,
+				932BDAC22608E2EE009D717D /* AcceuilViewController.swift in Sources */,
+				932BDACA2608E332009D717D /* ProduitsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		932BDA812608D703009D717D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932BDA822608D703009D717D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		932BDA862608D705009D717D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				932BDA872608D705009D717D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		932BDA8A2608D705009D717D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		932BDA8B2608D705009D717D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		932BDA8D2608D705009D717D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T595YJK36D;
+				INFOPLIST_FILE = BoogysBron/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ViviandJeremy.BoogysBron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		932BDA8E2608D705009D717D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T595YJK36D;
+				INFOPLIST_FILE = BoogysBron/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.ViviandJeremy.BoogysBron;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		932BDA732608D703009D717D /* Build configuration list for PBXProject "BoogysBron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932BDA8A2608D705009D717D /* Debug */,
+				932BDA8B2608D705009D717D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932BDA8C2608D705009D717D /* Build configuration list for PBXNativeTarget "BoogysBron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				932BDA8D2608D705009D717D /* Debug */,
+				932BDA8E2608D705009D717D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		932BDA912608D738009D717D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		932BDA922608D738009D717D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 932BDA912608D738009D717D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 932BDA702608D703009D717D /* Project object */;
+}
