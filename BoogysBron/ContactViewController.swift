@@ -13,8 +13,6 @@ import MessageUI
 class ContactViewController: UIViewController, CLLocationManagerDelegate, MFMailComposeViewControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var BoogysMap: MKMapView!
-    @IBOutlet weak var nameText: UITextField!
-    @IBOutlet weak var mailText: UITextField!
     @IBOutlet weak var messageText: UITextField!
     @IBOutlet weak var objetText: UITextField!
     
@@ -34,8 +32,6 @@ class ContactViewController: UIViewController, CLLocationManagerDelegate, MFMail
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[0]
-        let destinationLocation = CLLocationCoordinate2D(latitude: 45.72017, longitude: 4.915661)
-        let destinationPin = ContactViewController(pinTitle: "St. Louis", pinSubTitle: "", location: destinationLocation)
         let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region: MKCoordinateRegion = MKCoordinateRegion(center: myLocation, span: span)
@@ -69,7 +65,7 @@ class ContactViewController: UIViewController, CLLocationManagerDelegate, MFMail
         mc.mailComposeDelegate = self as MFMailComposeViewControllerDelegate
         mc.setToRecipients([self.recipientsMail!])
         mc.setSubject(objetText.text!)
-        mc.setMessageBody("Name: \(nameText.text!) \n\nEmail: \(mailText.text!) \n\nMessage: \(messageText.text!)", isHTML: false)
+        mc.setMessageBody("Message: \(messageText.text!)", isHTML: false)
         return mc
     }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
