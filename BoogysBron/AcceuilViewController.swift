@@ -20,5 +20,6 @@ class AcceuilViewController: UIViewController {
         animationView.contentMode = .scaleAspectFit
         view.addSubview(animationView)
         animationView.play()
+        animationView.loopMode = .loop
     }
 }
